@@ -1,0 +1,18 @@
+@startuml 2a
+start
+:Perekaman Suara;
+:Ekstraksi Fitur Suara (MFCC);
+:Pelatihan Model Pengenalan Suara:
+:Pengujian Model;
+:Pengenalan Warna dengan Suara Baru;
+if (Warna == Merah) is (Ya) then
+  :Menampilkan lingkarang Merah;
+else
+  if (Warna == Kuning) is (Ya) then
+    :Menampilkan lingkarang Kuning;
+  else
+    :Menampilkan pesan bahwa suara tidak dikenali;
+  endif
+endif
+end
+@enduml
